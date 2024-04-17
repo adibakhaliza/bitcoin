@@ -14,7 +14,7 @@ const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
 //TODO Currency-specific address prefix
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x8;
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x1a70ce;
 //TODO Choose maturity period for your currency
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 60;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
@@ -73,8 +73,8 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 //TODO Put here the name of your currency
-const char     CRYPTONOTE_NAME[]                             = "Memcoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001c08f8af8ae5f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121019db0f1593c2167fba7c0c3ca1e1f9e7ef09685193e67ef43b2fba87a716bbe89";
+const char     CRYPTONOTE_NAME[]                             = "Bitcoin";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -106,8 +106,8 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-  "34.215.56.5:17236",
-  "34.210.150.252:17236"
+  "172.232.203.73:17236",
+  "172.232.203.56:17236"
 };
 
 struct CheckpointData {
